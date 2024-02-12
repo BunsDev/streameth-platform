@@ -30,7 +30,7 @@ export default async function Watch({
   })
 
   return (
-    <div className="h-full flex flex-col w-full gap-4 lg:flex-row relative">
+    <div className="h-full flex flex-col w-full  lg:flex-row relative gap-4 ">
       <div className="flex flex-col w-full h-full z-40 lg:w-[75%] sticky lg:relative lg:top-0 gap-2 ">
         <Player
           assetId={video.assetId}
@@ -59,7 +59,7 @@ export default async function Watch({
         </TabsList>
         {tabs.map((tab) => (
           <TabsContent
-            className="h-[calc(100%-50px)] overflow-y-scroll"
+            className="h-[calc(100%-50px)]"
             key={tab.value}
             value={tab.value}>
             {tab.content}

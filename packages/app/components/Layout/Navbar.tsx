@@ -21,7 +21,7 @@ export default function Navbar({
       className="flex z-50 absolute w-screen top-[56px] right-0  
     lg:w-[unset] items-center text-center lg:relative lg:top-[unset] 
     lg:items-center lg:h-full">
-      <ul className="flex flex-col lg:flex-row w-full lg:space-x-2 lg:px-2">
+      <ul className="flex flex-col lg:flex-row w-full lg:space-x-2">
         {pages.map((item) => (
           <>
             <NavigationMenuItem key={item.name}>

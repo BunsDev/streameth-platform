@@ -32,12 +32,12 @@ export default async function OrganizationStrip({
         />
 
         <Link href={archivePath({ organization: organization.slug })}>
-          <CardTitle className=" text-2xl ml-2 mr-auto hover:underline">
+          <CardTitle className="text-2xl ml-2 mr-auto hover:underline">
             {organization.name} {' >'}
           </CardTitle>
         </Link>
       </div>
-      <div className="flex flex-row overflow-y-scroll gap-4 h-full">
+      <div className="flex flex-row overflow-y-auto gap-4 h-full">
         <VideoGrid scroll videos={videos} maxVideos={7} />
       </div>
     </div>

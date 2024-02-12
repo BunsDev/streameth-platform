@@ -91,7 +91,7 @@ const config = createConfig(
       [mainnet.id]: http(),
       [base.id]: http(),
     },
-ssr: true,
+    ssr: true,
     // Required API Keys
     walletConnectProjectId:
       process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
@@ -112,9 +112,9 @@ const SiweContext = (props: PropsWithChildren) => {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        {/* <SIWEProvider {...siweConfig}> */}
+        <SIWEProvider {...siweConfig}>
           <ConnectKitProvider>{props.children}</ConnectKitProvider>
-        {/* </SIWEProvider> */}
+        </SIWEProvider>
       </QueryClientProvider>
     </WagmiProvider>
   )
